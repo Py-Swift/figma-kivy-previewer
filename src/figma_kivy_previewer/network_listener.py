@@ -71,7 +71,10 @@ class NetworkListener(EventDispatcher):
     def receive_new_widget(self, new_module_code: str):
 
         try :
-            g = {}
+            g = {
+                '__name__': 'figma_kivy_previewer._preview',
+                '__package__': 'figma_kivy_previewer',
+            }
             exec(new_module_code, g)
             new_widget = g['preview'] if 'preview' in g else None
             if new_widget is None:
