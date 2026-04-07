@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "kivy>=2.3.1",
+    "thorvg-cython>=0.0.3",
     "websocket>=0.2.1",
     "websockets>=13.0",
 ]

@@ -103,6 +103,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "kivy" },
+    { name = "thorvg-cython" },
     { name = "websocket" },
     { name = "websockets" },
 ]
@@ -110,6 +111,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "kivy", specifier = ">=2.3.1" },
+    { name = "thorvg-cython", specifier = ">=0.0.3" },
     { name = "websocket", specifier = ">=0.2.1" },
     { name = "websockets", specifier = ">=13.0" },
 ]
@@ -311,6 +313,39 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/5f/a4/98b9c7c6428a668bf7e42ebb7c79d576a1c3c1e3ae2d47e674b468388871/requests-2.33.1.tar.gz", hash = "sha256:18817f8c57c6263968bc123d237e3b8b08ac046f5456bd1e307ee8f4250d3517", size = 134120, upload-time = "2026-03-30T16:09:15.531Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d7/8e/7540e8a2036f79a125c1d2ebadf69ed7901608859186c856fa0388ef4197/requests-2.33.1-py3-none-any.whl", hash = "sha256:4e6d1ef462f3626a1f0a0a9c42dd93c63bad33f9f1c1937509b8c5c8718ab56a", size = 64947, upload-time = "2026-03-30T16:09:13.83Z" },
+]
+
+[[package]]
+name = "thorvg-cython"
+version = "0.0.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e1/10/a7136573afc7ba529eddefdbd6f88b20a6a7d3090090031eec11d1d7c39a/thorvg_cython-0.0.3.tar.gz", hash = "sha256:eb44a826758940f0f02470a3c9359f57ddf25452ad1162c605556f6c14f510db", size = 344595, upload-time = "2026-04-04T23:41:40.474Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6b/0f/ea02ffc518511d76c6415d9fb5804ac2f6c22be092e84651c9a339a207c3/thorvg_cython-0.0.3-cp313-cp313-android_24_arm64_v8a.whl", hash = "sha256:6e063cb354e4a82f9c797d50d69b917269808c7a206d50973e4021cc7bf5a543", size = 1497363, upload-time = "2026-04-04T23:40:55.354Z" },
+    { url = "https://files.pythonhosted.org/packages/7a/0a/7a8dbc8efb0261a376f536dfcbc4908001b2c609bcb7dbaf654a352de22d/thorvg_cython-0.0.3-cp313-cp313-android_24_x86_64.whl", hash = "sha256:f49456878fd185387060974cca97e6e17bb1e2fca30463c7d3f6cb8cc0539b4a", size = 1526919, upload-time = "2026-04-04T23:40:57.194Z" },
+    { url = "https://files.pythonhosted.org/packages/aa/97/d627ca73c2b4f0a9b2f4989ab237a8ef27954d55ab0edaaa5f7c721c834f/thorvg_cython-0.0.3-cp313-cp313-ios_13_0_arm64_iphoneos.whl", hash = "sha256:1a8a52a87f6817be97d0d5d9d63abcaae2703663ad6b44e712c26dc2b86a92ac", size = 2357938, upload-time = "2026-04-04T23:40:58.957Z" },
+    { url = "https://files.pythonhosted.org/packages/74/55/d73ab313f706293c3fd307129b3f914af06c63f04fbe3d425188885a91f4/thorvg_cython-0.0.3-cp313-cp313-ios_13_0_arm64_iphonesimulator.whl", hash = "sha256:b937ce2d6a6aa5baf8af7eed411ad297e7b271fc1d2239b7c590e5551dba3232", size = 2364421, upload-time = "2026-04-04T23:41:00.54Z" },
+    { url = "https://files.pythonhosted.org/packages/b1/63/2afe2dd68732fa24c5b99c0fe206fc67f40a8361d5fbdef707973e3993d9/thorvg_cython-0.0.3-cp313-cp313-ios_13_0_x86_64_iphonesimulator.whl", hash = "sha256:432c67f18dc317d887bc35fb64dd3e7d292289a71cbb3aeab9e63487c607aa4a", size = 2380462, upload-time = "2026-04-04T23:41:02.467Z" },
+    { url = "https://files.pythonhosted.org/packages/9e/37/a81701439b578de95642b31c89ef0c192005afd5d1cd20428a3b73bb624d/thorvg_cython-0.0.3-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:dc77dc7d7f62627a6c2c1a5d37628443ded3e0bb9ce85fb7bb21086ee728d10f", size = 2796559, upload-time = "2026-04-04T23:41:04.233Z" },
+    { url = "https://files.pythonhosted.org/packages/22/54/7ef4b683d6300f965cf05ef99d9ac884d981011d61d081ab8d68a75f0099/thorvg_cython-0.0.3-cp313-cp313-macosx_11_0_universal2.whl", hash = "sha256:85c971e089b160e5a2ef0217958dd4d8d1b10db54d890bc53234c356c85aa91f", size = 3024538, upload-time = "2026-04-04T23:41:05.825Z" },
+    { url = "https://files.pythonhosted.org/packages/b3/e9/2b31d91ba73196c9e62a47e47c070c9ef3b877a486bb716cb0617a116930/thorvg_cython-0.0.3-cp313-cp313-macosx_11_0_x86_64.whl", hash = "sha256:84b17bc30c82d9287d870e545728c4a9eabbb029ae468e88b272fbf5c7ad34cd", size = 2819142, upload-time = "2026-04-04T23:41:07.824Z" },
+    { url = "https://files.pythonhosted.org/packages/52/f5/4a84f6e2dedccc702fb52c67c6d8e154a61760e38a9ed2abde3d64a1c4db/thorvg_cython-0.0.3-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:fbe84b1c1f066e8c5339ee76581b7202af5fc2852b0bb161ad51788d9fea6187", size = 2851547, upload-time = "2026-04-04T23:41:09.555Z" },
+    { url = "https://files.pythonhosted.org/packages/07/e6/c79563b77ab43d58d46ebc7e8d61c17c4756ba7f26597f727208a594c69c/thorvg_cython-0.0.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:eeca3d489011d8af73bcd69866c27fb585ad89f2e9f40abb40102267878a2090", size = 2962008, upload-time = "2026-04-04T23:41:11.092Z" },
+    { url = "https://files.pythonhosted.org/packages/53/21/a12e6375495f57186a0afa093ab0b131adcd26c10dfc62d522d8e6a60ed7/thorvg_cython-0.0.3-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:0d1e2aa60044a4ea7a67e02e8e517f7c405ed6ee3a04a09ba65e2707b981ebef", size = 3769016, upload-time = "2026-04-04T23:41:13.437Z" },
+    { url = "https://files.pythonhosted.org/packages/0a/2a/ddc04b955f2e816eedb8e692b8c3f3832d58535712da14cd74a4fdc8706c/thorvg_cython-0.0.3-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:a6a59c72a2aaf158fe9ad3092b768e4519c12d1e180e4a93fd8eddf3a24f3ed3", size = 3940791, upload-time = "2026-04-04T23:41:15.399Z" },
+    { url = "https://files.pythonhosted.org/packages/0b/21/eae18641bea0ae1aae8db03b41b3545af65253a2c96e8c5dbac2e82c11f0/thorvg_cython-0.0.3-cp313-cp313-win_amd64.whl", hash = "sha256:d18388fd352e1bc2db1889d71880996d9b78601e089fae45795abf317e9ded73", size = 635054, upload-time = "2026-04-04T23:41:17.234Z" },
+    { url = "https://files.pythonhosted.org/packages/fc/2e/40ff4f73e6e3a6cb6457682413240c19d17cd45978ea29ebfd4478c2eb63/thorvg_cython-0.0.3-cp313-cp313-win_arm64.whl", hash = "sha256:bfae81cd63f0b6cdce655e78f1a0f2b6bd1981062a9c73320893a3cc0e3ad7f2", size = 564339, upload-time = "2026-04-04T23:41:18.553Z" },
+    { url = "https://files.pythonhosted.org/packages/77/03/b107af20f60fc9d5234d71019d8204d355ecaf6a03c2801f3117d6b88025/thorvg_cython-0.0.3-cp314-cp314-android_24_arm64_v8a.whl", hash = "sha256:debff3dfb79d6d4610085a71e48ee8101fa23e0c1488bec040d706d16ca1829c", size = 1498684, upload-time = "2026-04-04T23:41:20.253Z" },
+    { url = "https://files.pythonhosted.org/packages/19/99/9cbfc280081e76a2bba4ef626312f7d912ede122f988f8333d799b1e9572/thorvg_cython-0.0.3-cp314-cp314-android_24_x86_64.whl", hash = "sha256:b7432d45c00ba621f07eb3fc4926123509c442c150acdf4565ba47453a34f69f", size = 1528451, upload-time = "2026-04-04T23:41:22.463Z" },
+    { url = "https://files.pythonhosted.org/packages/68/12/279ad1a3ce0faf2532308a940a53dbe81f5d83e97cd192e89246f0946fac/thorvg_cython-0.0.3-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:115e1e03f75205bda420897e22d0e5703caa78ba2ba19de4b055f7524f6cacf2", size = 2796811, upload-time = "2026-04-04T23:41:24.099Z" },
+    { url = "https://files.pythonhosted.org/packages/3d/64/3d9fa46def18861f19552bd6ddff169ecf9e41c87d05d9b01ff9fcad3e1e/thorvg_cython-0.0.3-cp314-cp314-macosx_11_0_universal2.whl", hash = "sha256:839cf0619557444aefcc55146c79e7bf696a59ef4a28fb7ca00d3c188228c1c7", size = 3023711, upload-time = "2026-04-04T23:41:25.975Z" },
+    { url = "https://files.pythonhosted.org/packages/fc/5a/6b6edf34b4f8584b29ad84e89d3c54ca5fd8841993664f084a804888dac4/thorvg_cython-0.0.3-cp314-cp314-macosx_11_0_x86_64.whl", hash = "sha256:e87a3d9871f9457ba280cd3b055f4c3db2cee4137811bdb53b6f5861993d840e", size = 2818005, upload-time = "2026-04-04T23:41:27.814Z" },
+    { url = "https://files.pythonhosted.org/packages/2b/41/861412c99e97258f1b186488069cb59270a54cd1f0acde7862ce774c3968/thorvg_cython-0.0.3-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:7db11a5926652311231f692a92ae6d9677179b280674d61519a104413f399087", size = 2847213, upload-time = "2026-04-04T23:41:29.689Z" },
+    { url = "https://files.pythonhosted.org/packages/8d/af/1b290a7592810de5bbedb3940855bf3a15d50a27747afc4a335f6d5e7bf7/thorvg_cython-0.0.3-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:4e247bd13566d3f2ef257a975b19828a75d0ba654fb34d6d7b24657809553a1a", size = 2941364, upload-time = "2026-04-04T23:41:31.579Z" },
+    { url = "https://files.pythonhosted.org/packages/e1/fb/eaab1e96feeee81e08174bc6a17f00bff7af56f91ba6c8518f54b5441414/thorvg_cython-0.0.3-cp314-cp314-musllinux_1_2_aarch64.whl", hash = "sha256:e729eeb6433568acec29f95ebf67c1ca4691e64b60b4d6704725a898ea1636ea", size = 3769721, upload-time = "2026-04-04T23:41:33.635Z" },
+    { url = "https://files.pythonhosted.org/packages/ef/a5/6bd4308b97c882f6088315642327cd8e59ec9567c9b1999d291c4cf3292f/thorvg_cython-0.0.3-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:02a9e13c85c88d343b6d0d927ac35b8fe73ce7a325be3041e558cec0d1d8f501", size = 3926340, upload-time = "2026-04-04T23:41:35.586Z" },
+    { url = "https://files.pythonhosted.org/packages/fe/93/2a2b4c9f01fa139a36b4bf061e5342f9fa2117386825fee2b3f30fdb99a2/thorvg_cython-0.0.3-cp314-cp314-win_amd64.whl", hash = "sha256:6bd1cc5ceb3abfcd861a303f8106b294538c74c226f3e5ab2cc1076d93b54d79", size = 656481, upload-time = "2026-04-04T23:41:37.075Z" },
+    { url = "https://files.pythonhosted.org/packages/6b/2e/34e9a7cc44a402019b4b9bd646945346ae940386268628b71769cf0071a7/thorvg_cython-0.0.3-cp314-cp314-win_arm64.whl", hash = "sha256:542db52e2795eaf3c54f610f41cee7994579d753ca4c1faee4092a4a373937b1", size = 588629, upload-time = "2026-04-04T23:41:38.817Z" },
 ]
 
 [[package]]
