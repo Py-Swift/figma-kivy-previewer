@@ -5,11 +5,10 @@ _tvg_engine = Engine()
 _tvg_engine.init()
 
 from kivy.app import App
-from kivy.lang import Builder
+from kivy.uix.widget import Widget
 from os import environ
 from .previewer import Previewer
 
-from .generated import preview
 
 class MainApp(App):
 
@@ -21,7 +20,7 @@ class MainApp(App):
         self.previewer.listener.start()
 
     def build(self):
-        return preview
+        return self.previewer
 
 
 def main():
